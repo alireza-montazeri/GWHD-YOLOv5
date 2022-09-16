@@ -7,8 +7,17 @@ The network weights were not randomly initialized at the beginning of the traini
 ## Result
 The following results were obtained by Training on 3655 train data and 1476 validation data. The results can be seen in the Figure. The mAP0.5 index for validation data has reached the value of 0.854 in the best case, which means that the box detected by the network meets the actual box with at least 50% of its area in 85% of the cases. We test an image from the test set using the best coefficients. The Below image shows the clusters detected by the network. It can be seen that all wheat clusters have been well recognized. Finally, for the final test of the network, we validate the network using all test data. We reach the mAP index value of 0.5, equal to 0.48. The confusion matrix diagram can be seen below.
 
-<img src="https://github.com/alireza-montazeri/GWHD-YOLOv5/blob/master/Result/detect/exp2/032037a1be58cbb3d4bf5ae1d34721f4e88800b0c73b0d9dc965cc64e72fc4ef.png" />
-
 <img src="https://github.com/alireza-montazeri/GWHD-YOLOv5/blob/master/Result/train/exp2/results.png" />
 
+<img src="https://github.com/alireza-montazeri/GWHD-YOLOv5/blob/master/Result/detect/exp2/032037a1be58cbb3d4bf5ae1d34721f4e88800b0c73b0d9dc965cc64e72fc4ef.png" />
+
 <img src="https://github.com/alireza-montazeri/GWHD-YOLOv5/blob/master/Result/val/exp2/confusion_matrix.png" />
+
+# References
+[1]	Bochkovskiy, Alexey & Wang, Chien-Yao & Liao, Hong-yuan. (2020). YOLOv4: Optimal Speed and Accuracy of Object Detection.
+
+[2]	Wang, Chien-Yao & Liao, Hong-yuan & Wu, Yuen-Hua & Chen, Ping-Yang & Hsieh, Jun-Wei & Yeh, I-Hau. (2020). CSPNet: A New Backbone that can Enhance Learning Capability of CNN. 1571-1580. 10.1109/CVPRW50498.2020.00203.
+
+[3]	Liu, Shu & Qi, Lu & Qin, Haifang & Shi, Jianping & Jia, Jiaya. (2018). Path Aggregation Network for Instance Segmentation.
+
+[4]	https://github.com/ultralytics/yolov5
